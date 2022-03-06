@@ -1,1 +1,22 @@
-footer{background-color: grey;}
+.footer {
+    background-color: rgb(53, 53, 53);
+    color:white;
+    text-decoration: none;
+    list-style-type: none;
+    &__title{
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+    &__list{
+        list-style-type: none;
+
+    }
+    &__link{
+        color: white;
+        &__icon{
+            margin-right: 5px;
+        }
+
+    }
+}

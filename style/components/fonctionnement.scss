@@ -1,0 +1,46 @@
+.fonctionnement{
+    padding: 0 40px;
+    
+    &__steps{
+        padding: 0;
+        list-style: none;
+        
+     
+            &__count{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 22px;
+                width: 22px;
+                border-radius: 100%;
+                background-color: $color_primary;
+                color: white;
+                position: relative;
+                right:10px;
+                
+            }
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                background-color: rgb(246, 246, 246);
+                margin: 0 0 20px 0;
+                height: 70px;
+                box-shadow: 1px 1px 4px rgb(196, 190, 190);
+                border-radius: 20px
+                
+                
+            }
+            &__icon{
+                margin:0 20px;
+                color: grey;
+                
+                &__selected{
+                    color: $color-primary;
+                    
+                }
+            }
+
+    }
+    
+}

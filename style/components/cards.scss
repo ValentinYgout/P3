@@ -1,0 +1,83 @@
+.restaurant-list{
+    background-color: rgb(246, 246, 246);
+    margin: 50px 0;
+    padding: 20px 20px;
+    width: auto;
+    &__card-list{
+        width: auto;
+        list-style: none;
+        padding: 0;
+        
+    }
+    &__card{
+        height: 250px;
+      
+        margin-bottom: 20px;
+      
+      
+        &__img{
+            height: 180px;
+            
+            
+            img{
+              
+                border-radius: 20px 20px 0px 0px;
+               
+                height: 180px;
+                width: 100%;
+                object-fit: cover;
+            }
+            &__new{
+                font-weight: bold;
+                background-color: #91d3c2;
+                color: #168866;
+                width: 80px;
+                display: block;
+                text-align: center;
+               
+             
+                height: 25px;
+                width: 100px;
+                padding-top: 5px;
+
+               
+                position: relative;
+                white-space: nowrap;
+               bottom: 170px;
+               left: 65%;
+            }
+        }
+        &__card-info{
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 10px;
+            height: 70px;
+            border-radius:20px;
+            background-color: white;
+            border-radius: 0 0 20px 20px;
+            border: 1px solid lightgrey;
+            
+            
+            
+            &__name{
+                color: black;
+               
+            }
+            &__city{
+                color: black;
+               
+            }
+            &_like{
+                position: absolute;
+                right: 10%;
+               
+                color: black;
+                
+          
+            }
+
+        }
+    }
+}
