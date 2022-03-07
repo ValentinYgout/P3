@@ -1,6 +1,10 @@
 .fonctionnement{
-    padding: 0 40px;
-    
+    padding: 0 20px;
+    h2{
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
     &__steps{
         padding: 0;
         list-style: none;
@@ -10,8 +14,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                height: 22px;
-                width: 22px;
+                height: 24px;
+                width: 24px;
                 border-radius: 100%;
                 background-color: $color_primary;
                 color: white;
@@ -24,15 +28,18 @@
                 align-items: center;
                 justify-content: flex-start;
                 background-color: rgb(246, 246, 246);
-                margin: 0 0 20px 0;
-                height: 70px;
+                margin: 0 0 15px 0;
+                height: 80px;
                 box-shadow: 1px 1px 4px rgb(196, 190, 190);
-                border-radius: 20px
+                border-radius: 20px;
+                font-size: 18px;
+                font-weight: 700;
+                
                 
                 
             }
             &__icon{
-                margin:0 20px;
+                margin:0 15px;
                 color: grey;
                 
                 &__selected{

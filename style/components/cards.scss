@@ -1,16 +1,17 @@
 .restaurant-list{
     background-color: rgb(246, 246, 246);
-    margin: 50px 0;
-    padding: 20px 20px;
+    margin: 50px 0 0 0;
+    padding: 30px 20px;
     width: auto;
     &__card-list{
         width: auto;
         list-style: none;
         padding: 0;
         
+        
     }
     &__card{
-        height: 250px;
+        height: 280px;
       
         margin-bottom: 20px;
       
@@ -53,25 +54,32 @@
             align-items: center;
             justify-content: flex-start;
             padding-left: 10px;
-            height: 70px;
+            height: 80px;
             border-radius:20px;
             background-color: white;
             border-radius: 0 0 20px 20px;
             border: 1px solid lightgrey;
+            line-height: 28px;
             
             
             
             &__name{
                 color: black;
+                font-weight: 700;
+                font-size: 20px;
                
             }
             &__city{
                 color: black;
+                margin:0;
+                font-size: 20px;
+                font-weight: 100;
                
             }
             &_like{
                 position: absolute;
                 right: 10%;
+                font-size: 24px;
                
                 color: black;
                 

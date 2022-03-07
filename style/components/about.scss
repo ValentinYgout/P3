@@ -3,26 +3,25 @@
     
     height: 200px;
     padding: 30px 0;
+    margin-bottom: 100px;
     &__title{
-        padding: 0 18%;
+        
+        padding: 0 10%;
         margin:0;
+        font-size: 24px;
+        font-weight: 700;
+        
 
     }
     &__subtitle{
         margin: 10px 10%;
+        font-size: 24px;
+        font-weight: 100;
     }
     &__button{
-       font-weight: bold;
-        color: white;
-        height: 50px;
-        width: 60%;
-        margin: 15px 20% 0 20%;
-        border: none;
-        box-shadow: 0px 5px 5px lightgrey;
-       
-         background: linear-gradient(170deg, rgba(253,120,218,1) 7%, rgba(147,86,220,1) 59%);
-        border-radius: 30px;
-        
+      @include pinkButton;
+      width: 65%;
+        font-size: 18px;
     }
 
 }

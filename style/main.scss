@@ -1,7 +1,9 @@
 @import "./base/base";
+@import "./utils/mixins";
 @import "./utils/variables";
 @import "./layouts/header";
 @import "./layouts/footer";
+@import "./pages/restaurants";
 @import "./components/location";
 @import "./components/cards";
 @import "./components/fonctionnement";

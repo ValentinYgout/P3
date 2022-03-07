@@ -3,19 +3,31 @@
     color:white;
     text-decoration: none;
     list-style-type: none;
+    padding: 30px 10px 10px 30px;
+    line-height: 28px;
+
     &__title{
+       
         font-size: 20px;
-        font-weight: bold;
+        font-family: Shrikhand;
+        color: white;
+       
 
     }
     &__list{
         list-style-type: none;
+        margin: 20px 0;
+        padding: 0;
 
     }
     &__link{
         color: white;
+        margin: 20px 0;
+        font-size: 20px;
         &__icon{
-            margin-right: 5px;
+            margin-right: 20px;
+            width: 12px;
+            height: 10px;
         }
 
     }
