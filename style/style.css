@@ -15,14 +15,14 @@ h1, h2, h3 {
 .logo {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   height: 75px;
 }
 .logo__text {
-  margin: 20px 0;
   font-size: 34px;
   font-family: Shrikhand;
+  margin: 20%;
 }
 
 .fa-arrow-left {
@@ -40,7 +40,7 @@ h1, h2, h3 {
   line-height: 28px;
 }
 .footer__title {
-  font-size: 20px;
+  font-size: 18px;
   font-family: Shrikhand;
   color: white;
 }
@@ -90,6 +90,10 @@ h1, h2, h3 {
 .restaurant-title h1:first-letter {
   text-transform: uppercase;
 }
+.restaurant-title__heart {
+  font-size: 24px;
+}
+
 .menu {
   margin: 0px 0px 50px 0px;
 }
@@ -98,12 +102,19 @@ h1, h2, h3 {
   font-size: 18px;
   text-transform: uppercase;
 }
+.menu__category::after {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #99E2D0;
+}
 .menu__plat {
   background-color: white;
   display: flex;
   justify-content: space-between;
   border-radius: 20px;
-  border: 1px solid lightgrey;
+  box-shadow: 1px 1px 3px #c4bebe;
   height: 80px;
   margin: 15px 0;
 }
@@ -123,7 +134,7 @@ h1, h2, h3 {
   font-weight: 100;
 }
 .menu__plat__prix {
-  margin: 28px 14px 5px 4px;
+  margin: 32px 14px 5px 4px;
   font-weight: bold;
   font-size: 18px;
 }
@@ -142,7 +153,7 @@ h1, h2, h3 {
   margin: 15px 20% 15px 20%;
   border: none;
   box-shadow: 0px 5px 5px lightgrey;
-  background: linear-gradient(170deg, #fd78da 7%, #9356dc 59%);
+  background: linear-gradient(170deg, #fd78da 20%, #9356dc 100%);
   border-radius: 30px;
   width: 50%;
   font-size: 17px;
@@ -154,6 +165,7 @@ h1, h2, h3 {
   justify-content: center;
   height: 50px;
   background-color: #eaeaea;
+  box-shadow: inset 0 6px 7px -7px grey;
 }
 .location__icon {
   height: 20px;
@@ -163,6 +175,7 @@ h1, h2, h3 {
   margin: 20px;
   font-size: 18px;
   font-weight: 700;
+  color: #505050;
 }
 
 .restaurant-list {
@@ -191,8 +204,8 @@ h1, h2, h3 {
 }
 .restaurant-list__card__img__new {
   font-weight: bold;
-  background-color: #91d3c2;
-  color: #168866;
+  background-color: #99e2d0;
+  color: #008766;
   width: 80px;
   display: block;
   text-align: center;
@@ -225,8 +238,8 @@ h1, h2, h3 {
 .restaurant-list__card__card-info__city {
   color: black;
   margin: 0;
-  font-size: 20px;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 400;
 }
 .restaurant-list__card__card-info_like {
   position: absolute;
@@ -258,6 +271,7 @@ h1, h2, h3 {
   color: white;
   position: relative;
   right: 10px;
+  font-size: 14px;
 }
 .fonctionnement__steps li {
   display: flex;
@@ -270,6 +284,9 @@ h1, h2, h3 {
   border-radius: 20px;
   font-size: 18px;
   font-weight: 700;
+}
+.fonctionnement__steps li:nth-child(3) {
+  background-color: #f5edff;
 }
 .fonctionnement__steps__icon {
   margin: 0 15px;
@@ -290,11 +307,13 @@ h1, h2, h3 {
   margin: 0;
   font-size: 24px;
   font-weight: 700;
+  text-align: center;
 }
 .about__subtitle {
   margin: 10px 10%;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 300;
+  text-align: center;
 }
 .about__button {
   font-weight: bold;
@@ -304,10 +323,10 @@ h1, h2, h3 {
   margin: 15px 20% 15px 20%;
   border: none;
   box-shadow: 0px 5px 5px lightgrey;
-  background: linear-gradient(170deg, #fd78da 7%, #9356dc 59%);
+  background: linear-gradient(170deg, #fd78da 20%, #9356dc 100%);
   border-radius: 30px;
   width: 65%;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */

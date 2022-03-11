@@ -21,6 +21,7 @@
                 color: white;
                 position: relative;
                 right:10px;
+                font-size: 14px;
                 
             }
             li{
@@ -34,6 +35,10 @@
                 border-radius: 20px;
                 font-size: 18px;
                 font-weight: 700;
+                &:nth-child(3)
+                {
+                    background-color: #f5edff ;
+                }
                 
                 
                 

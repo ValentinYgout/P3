@@ -1,5 +1,7 @@
+
 .fa-arrow-left{
     display: block;
+    
 }
 .restaurant-bg{
     img {
@@ -30,6 +32,7 @@
         text-transform: uppercase;
     }
     &__heart{
+        font-size: 24px;
 
     }
     
@@ -44,6 +47,12 @@
         
         
         &::after {
+            content: " ";
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: $color-tertiary;
+            
             
         
           
@@ -54,7 +63,7 @@
         display: flex;
         justify-content: space-between;
         border-radius: 20px;
-        border: 1px solid lightgrey;
+        box-shadow: 1px 1px 3px rgb(196, 190, 190);
         height: 80px;
         margin: 15px 0;
        
@@ -81,7 +90,7 @@
 
         }
         &__prix{
-            margin: 28px 14px 5px 4px ;
+            margin: 32px 14px 5px 4px ;
             font-weight: bold;
             font-size: 18px;
 
