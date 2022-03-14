@@ -17,6 +17,7 @@
     border-radius: 40px 40px 0 0;
     margin-top:-50px ;
     padding: 0 20px;
+   
 
 }
 .restaurant-title{
@@ -66,36 +67,102 @@
         box-shadow: 1px 1px 3px rgb(196, 190, 190);
         height: 80px;
         margin: 15px 0;
-       
+        overflow: hidden;
+        
+        animation: MenuDishes 1s 5s ease-in-out;
+         animation-fill-mode: both;
+        
+
          
 
 
         &__text{
+            margin: 0;
             padding: 15px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            overflow: hidden;
+            
+            max-width: calc(100%);
+            flex: 1;
+            
            
 
         }
         &__nom{
+                
+            margin: 0;
             font-weight: 700;
             font-size: 18px;
             margin-bottom: 10px;
+           
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+           
+            
 
         }
         &__ingredients{
+            
             font-size: 18px;
             font-weight: 100;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+           
 
         }
         &__prix{
-            margin: 32px 14px 5px 4px ;
+            margin: 32px 14px 5px 10px ;
             font-weight: bold;
             font-size: 18px;
 
         }
+        &__checked{
+            background-color: #99e2d0;
+            border-radius: 0px 20px 20px 0px;
+            width: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-duration: 0.5s;
+            margin-right: -70px;
+            
+           
+            
 
+        }
+        &:hover &__checked {
+            margin-right: 0px;
+            
+        }
+        &:hover &__check {
+            
+            transform: rotate(360deg)
+        }
+
+        &__check{
+            height: 1.6rem;
+             width: 1.6rem;
+             background-color: #fff;
+             display: flex;
+             align-items: center;
+                justify-content: center;
+             border-radius: 100px;
+             
+             transition-duration: 0.5s;
+        }
+        &__icon{
+            color: $color-tertiary;
+        }
+
+    }
+}
+@for $i from 1 through 9 {
+    .menu__plat__#{$i} {
+        animation-delay:#{2+$i * 0.5}s;
     }
 }
 
