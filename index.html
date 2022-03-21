@@ -7,22 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;800;900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;800;900&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/a4ffb19968.js" crossorigin="anonymous"></script>
     <link href="style/style.css" rel="stylesheet">
     <title>Ohmyfood</title>
 </head>
 
 <body>
+
     <div class="loader">
-        
-          <div class="loader__cube"></div>
-          
-        </div>
-      </div>
+
+        <div class="loader__cube"></div>
+
+    </div>
+    </div>
 
     <header class="logo">
-       
+
         <h1 class="logo__text">ohmyfood</h1>
     </header>
     <div class="location">
@@ -41,27 +44,28 @@
                 <span class="fonctionnement__steps__count">1</span>
                 <i class="fa-mobile-alt fas fonctionnement__steps__icon" aria-hidden="true"></i>
                 <span>Choisissez un restaurant</span>
-                
+
             </li>
             <li>
                 <span class="fonctionnement__steps__count">2</span>
                 <i class="fa-list-ul fas fonctionnement__steps__icon" aria-hidden="true"></i>
                 <span>Composez votre menu</span>
-                
+
             </li>
             <li>
                 <span class="fonctionnement__steps__count ">3</span>
-                <i class="fa-store fas fonctionnement__steps__icon  fonctionnement__steps__icon__selected" aria-hidden="true"></i>
+                <i class="fa-store fas fonctionnement__steps__icon  fonctionnement__steps__icon__selected"
+                    aria-hidden="true"></i>
                 <span>Dégustez au restaurant</span>
-                
+
             </li>
         </ul>
     </div>
     <div class="restaurant-list">
-        <h2>Restaurants</h2>
+        <h2 class="restaurant-list__title">Restaurants</h2>
         <ul class="restaurant-list__card-list">
             <li class="restaurant-list__card">
-                <a href="">
+                <a href="./restaurants/palettedugout.html">
                     <div class="restaurant-list__card__img">
                         <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
                         <span class="restaurant-list__card__img__new">Nouveau</span>
@@ -71,15 +75,22 @@
                             <h2 class="restaurant-list__card__card-info__name">La palette du goût</h2>
                             <p class="restaurant-list__card__card-info__city">Ménilmontant</p>
                         </div>
-                        <div class="restaurant-list__card__card-info_like">
-                            <i class="fa-heart far" aria-hidden="true"></i>
+                        <div class="restaurant-list__card__card-info__like">
+                            <label for="heart-check1">
+                                <i class="fa-heart far restaurant-list__card__card-info__like__heart1"
+                                    aria-hidden="true"> </i>
+                            </label>
+                            <input type="checkbox" id="heart-check1"> </input>
+                            <!-- <input type="checkbox" id="heart-check2"> </input> -->
+                            <label for="heart-check1" class="restaurant-list__card__card-info__like__heart1__filled1"> </label>
+
                         </div>
                     </div>
                 </a>
             </li>
-            <li class="restaurant-list__card" >
+            <li class="restaurant-list__card">
 
-                <a href="">
+                <a href="./restaurants/noteenchantee.html">
                     <div class="restaurant-list__card__img">
                         <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
                         <span class="restaurant-list__card__img__new">Nouveau</span>
@@ -89,49 +100,70 @@
                             <h2 class="restaurant-list__card__card-info__name">La note enchantée</h2>
                             <p class="restaurant-list__card__card-info__city">Charonne</p>
                         </div>
-                        <div class="restaurant-list__card__card-info_like">
-                            <i class="fa-heart far" aria-hidden="true"></i>
+                        <div class="restaurant-list__card__card-info__like">
+                            <label for="heart-check2">
+                                <i class="fa-heart far restaurant-list__card__card-info__like__heart2 "
+                                    aria-hidden="true"> </i>
+                            </label>
+                            <input type="checkbox" id="heart-check2"> </input>
+                            <!-- <input type="checkbox" id="heart-check2"> </input> -->
+                            <label for="heart-check2" class="restaurant-list__card__card-info__like__heart2__filled2"> </label>
+
                         </div>
                     </div>
                 </a>
             </li>
-       
+
             </li>
-                <li class="restaurant-list__card">
+            <li class="restaurant-list__card">
 
-                    <a href="./restaurants/alafrancaise.html">
-                        <div class="restaurant-list__card__img">
-                            <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
-                            
-                        </div>
-                        <div class="restaurant-list__card__card-info">
-                            <div>
-                                <h2 class="restaurant-list__card__card-info__name">A la Française</h2>
-                                <p class="restaurant-list__card__card-info__city">Cité Rouget</p>
-                            </div>
-                            <div class="restaurant-list__card__card-info_like">
-                                <i class="fa-heart far" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="restaurant-list__card">
+                <a href="./restaurants/alafrancaise.html">
+                    <div class="restaurant-list__card__img">
+                        <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
 
-                    <a href="">
-                        <div class="restaurant-list__card__img">
-                            <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-                            
+                    </div>
+                    <div class="restaurant-list__card__card-info">
+                        <div>
+                            <h2 class="restaurant-list__card__card-info__name">A la Française</h2>
+                            <p class="restaurant-list__card__card-info__city">Cité Rouget</p>
                         </div>
-                        <div class="restaurant-list__card__card-info">
-                            <div>
-                                <h2 class="restaurant-list__card__card-info__name">Le délice des sens</h2>
-                                <p class="restaurant-list__card__card-info__city">Folie-Méricourt</p>
-                            </div>
-                            <div class="restaurant-list__card__card-info_like">
-                                <i class="fa-heart far" aria-hidden="true"></i>
-                            </div>
+                        <div class="restaurant-list__card__card-info__like">
+                            <label for="heart-check3">
+                                <i class="fa-heart far restaurant-list__card__card-info__like__heart3 "
+                                    aria-hidden="true"> </i>
+                            </label>
+                            <input type="checkbox" id="heart-check3"> </input>
+                            <!-- <input type="checkbox" id="heart-check2"> </input> -->
+                            <label for="heart-check3" class="restaurant-list__card__card-info__like__heart3__filled3"> </label>
+
                         </div>
-                    </a>
+                    </div>
+                </a>
+            </li>
+            <li class="restaurant-list__card">
+
+                <a href="./restaurants/delicedessens.html">
+                    <div class="restaurant-list__card__img">
+                        <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+
+                    </div>
+                    <div class="restaurant-list__card__card-info">
+                        <div>
+                            <h2 class="restaurant-list__card__card-info__name">Le délice des sens</h2>
+                            <p class="restaurant-list__card__card-info__city">Folie-Méricourt</p>
+                        </div>
+                        <div class="restaurant-list__card__card-info__like">
+                            <label for="heart-check4">
+                                <i class="fa-heart far restaurant-list__card__card-info__like__heart4 "
+                                    aria-hidden="true"> </i>
+                            </label>
+                            <input type="checkbox" id="heart-check4"> </input>
+                            <!-- <input type="checkbox" id="heart-check2"> </input> -->
+                            <label for="heart-check4" class="restaurant-list__card__card-info__like__heart4__filled4"> </label>
+
+                        </div>
+                    </div>
+                </a>
 
 
 
@@ -142,24 +174,24 @@
         <h1 class="footer__title"> ohmyfood</h1>
         <ul class="footer__list">
             <li>
-                <a class="footer__link "href="#">
+                <a class="footer__link " href="#">
                     <i class="fa-utensils fas footer__link__icon" aria-hidden="true"></i>
                     Proposer un restaurant
                 </a>
             </li>
             <li>
-                <a  class="footer__link" href="#">
+                <a class="footer__link" href="#">
                     <i class="fa-hands-helping fas footer__link__icon" aria-hidden="true"></i>
-                     Devenir partenaire
+                    Devenir partenaire
                 </a>
             </li>
             <li>
                 <a class="footer__link" href="#">
-                   Mentions légales
+                    Mentions légales
                 </a>
             </li>
             <li>
-                <a class="footer__link"  href="#">
+                <a class="footer__link" href="#">
                     Contact
                 </a>
             </li>

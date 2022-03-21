@@ -1,9 +1,9 @@
-
-.fa-arrow-left{
+.fa-arrow-left {
     display: block;
-    
+
 }
-.restaurant-bg{
+
+.restaurant-bg {
     img {
         width: 100%;
         height: 300px;
@@ -11,55 +11,120 @@
 
     }
 }
-.restaurant-container{
+
+.restaurant-container {
     position: relative;
     background: rgb(243, 241, 241);
     border-radius: 40px 40px 0 0;
-    margin-top:-50px ;
+    margin-top: -50px;
     padding: 0 20px;
-   
+
 
 }
-.restaurant-title{
+
+.restaurant-title {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     font-family: Shrikhand;
     padding-top: 30px;
     font-weight: normal;
     margin-bottom: 30px;
-   
-    h1:first-letter{
+
+
+    h1:first-letter {
         text-transform: uppercase;
     }
-    &__heart{
-        font-size: 24px;
-
+    &__heartcontainer{
+        height: 30px;
     }
-    
+
+    &__heart {
+        font-size: 30px;
+
+
+
+        &__filled {
+            display: block;
+            background: $color-primary;
+            position: relative;
+            bottom: 25px;
+            left: 6px;
+            // bottom: 0px;
+            // left: -30px;
+            height: 18px;
+            width: 18px;
+            transform: rotate(-45deg) scale(0.00001);
+
+            &::after {
+                background: inherit;
+                border-radius: 50%;
+                content: "";
+                position: absolute;
+                top: -50%;
+                left: 0;
+                height: 18px;
+                width: 18px;
+
+            }
+
+            &::before {
+                background: inherit;
+                border-radius: 50%;
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -50%;
+                height: 18px;
+                width: 18px;
+
+            }
+
+        }
+    }
+
+
+
 }
-.menu{
+
+#heart-check:checked~ .restaurant-title__heart__filled {
+    animation: pulseUp 1.5s;
+    animation-fill-mode: both;
+
+}
+
+// #heart-check:not(:checked)~ .restaurant-title__heart__filled {
+//     animation: pulseDown 5s;
+//     animation-fill-mode: both;
+
+// }
+
+
+
+.menu {
     margin: 0px 0px 50px 0px;
-    &__category{
+
+    &__category {
         font-weight: 100;
         font-size: 18px;
         text-transform: uppercase;
-       
-        
-        
+
+
+
         &::after {
             content: " ";
             display: block;
             width: 50px;
             height: 2px;
             background: $color-tertiary;
-            
-            
-        
-          
-          }
+
+
+
+
+        }
     }
-    &__plat{
+
+    &__plat {
         background-color: white;
         display: flex;
         justify-content: space-between;
@@ -68,59 +133,63 @@
         height: 80px;
         margin: 15px 0;
         overflow: hidden;
-        
+
         animation: MenuDishes 1s 5s ease-in-out;
-         animation-fill-mode: both;
-        
-
-         
+        animation-fill-mode: both;
 
 
-        &__text{
+
+
+
+        &__text {
             margin: 0;
             padding: 15px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             overflow: hidden;
-            
+
             max-width: calc(100%);
             flex: 1;
-            
-           
+
+
 
         }
-        &__nom{
-                
+
+        &__nom {
+
             margin: 0;
             font-weight: 700;
             font-size: 18px;
             margin-bottom: 10px;
-           
+
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-           
-            
+
+
 
         }
-        &__ingredients{
-            
-            font-size: 18px;
-            font-weight: 100;
+
+        &__ingredients {
+
+            font-size: 16px;
+            font-weight: 400;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-           
+
 
         }
-        &__prix{
-            margin: 32px 14px 5px 10px ;
+
+        &__prix {
+            margin: 32px 14px 5px 10px;
             font-weight: bold;
             font-size: 18px;
 
         }
-        &__checked{
+
+        &__checked {
             background-color: #99e2d0;
             border-radius: 0px 20px 20px 0px;
             width: 70px;
@@ -129,50 +198,54 @@
             justify-content: center;
             transition-duration: 0.5s;
             margin-right: -70px;
-            
-           
-            
+
+
+
 
         }
+
         &:hover &__checked {
             margin-right: 0px;
-            
+
         }
+
         &:hover &__check {
-            
+
             transform: rotate(360deg)
         }
 
-        &__check{
+        &__check {
             height: 1.6rem;
-             width: 1.6rem;
-             background-color: #fff;
-             display: flex;
-             align-items: center;
-                justify-content: center;
-             border-radius: 100px;
-             
-             transition-duration: 0.5s;
+            width: 1.6rem;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+
+            transition-duration: 0.5s;
         }
-        &__icon{
+
+        &__icon {
             color: $color-tertiary;
         }
 
     }
 }
-@for $i from 1 through 9 {
+
+@for $i from 1 through 10 {
     .menu__plat__#{$i} {
-        animation-delay:#{2+$i * 0.5}s;
+        animation-delay:#{$i * 0.2}s;
     }
 }
 
-.order{
+.order {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 60px;
-  
-    &__button{
+
+    &__button {
         @include pinkButton;
         width: 50%;
         font-size: 17px;
