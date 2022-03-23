@@ -22,8 +22,11 @@
     }
     &__button{
       @include pinkButton;
-      width: 65%;
+      width: auto;
+      margin: 15px auto;
+      padding: 0 20px;
         font-size: 17px;
+        transition-duration: .5s;
     }
 
 }

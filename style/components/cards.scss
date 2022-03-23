@@ -99,21 +99,26 @@
                 margin-right: 40px;
                 font-size: 24px;
                 color: black;
+                bottom: 50px;
+                left: 85%;
+                
 
                 @for $i from 1 through 4 {
 
                     &__heart#{$i} {
                         font-size: 30px;
+                        cursor: pointer;
 
                         &__filled#{$i} {
                             display: block;
                             background: $color-primary;
                             position: relative;
                             bottom: 24px;
-                            left: 6px;
-                            height: 18px;
-                            width: 18px;
+                            left: 5px;
+                            height: 20px;
+                            width: 20px;
                             transform: rotate(-45deg) scale(0.00001);
+                            cursor: pointer;
 
                             &::after {
                                 background: inherit;
@@ -122,8 +127,8 @@
                                 position: absolute;
                                 top: -50%;
                                 left: 0;
-                                height: 18px;
-                                width: 18px;
+                                height: 20px;
+                                width: 20px;
 
                             }
 
@@ -134,8 +139,8 @@
                                 position: absolute;
                                 top: 0;
                                 right: -50%;
-                                height: 18px;
-                                width: 18px;
+                                height: 20px;
+                                width: 20px;
 
                             }
                         }
