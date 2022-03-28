@@ -386,6 +386,7 @@ h1, h2, h3 {
   box-shadow: 0px 5px 5px lightgrey;
   background: linear-gradient(170deg, #fd78da 20%, #9356dc 100%);
   border-radius: 30px;
+  cursor: pointer;
   width: 50%;
   font-size: 17px;
 }
@@ -724,6 +725,7 @@ h1, h2, h3 {
   box-shadow: 0px 5px 5px lightgrey;
   background: linear-gradient(170deg, #fd78da 20%, #9356dc 100%);
   border-radius: 30px;
+  cursor: pointer;
   width: auto;
   margin: 15px auto;
   padding: 0 20px;
