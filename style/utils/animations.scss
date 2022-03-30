@@ -69,19 +69,17 @@
 
 }
 
-.heart {
-  display: block;
-  background: $color-primary;
-  position: relative;
-  bottom: 25px;
-  left: 5px;
-  // bottom: 0px;
-  // left: -30px;
-  height: 15px;
-  width: 15px;
-  transform: rotate(-45deg) scale(0.00001);
+// .heart {
+//   display: block;
+//   background: $color-primary;
+//   position: relative;
+//   bottom: 25px;
+//   left: 5px;
+//   height: 15px;
+//   width: 15px;
+//   transform: rotate(-45deg) scale(0.00001);
 
-}
+// }
 
 @for $i from 1 through 4 {
 
@@ -117,17 +115,19 @@
   }
 
   70% {
-    transform: rotate(-45deg) scale(0.90);
-  }
-
-  85% {
     transform: rotate(-45deg) scale(0.7);
   }
 
+  85% {
+    transform: rotate(-45deg) scale(1.2);
+  }
+
   100% {
-    transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1.05);
   }
 }
+
+
 
 @keyframes pulseDown {
 

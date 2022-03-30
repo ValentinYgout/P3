@@ -57,17 +57,6 @@ h1, h2, h3 {
   animation-iteration-count: 3;
 }
 
-.heart {
-  display: block;
-  background: #9356DC;
-  position: relative;
-  bottom: 25px;
-  left: 5px;
-  height: 15px;
-  width: 15px;
-  transform: rotate(-45deg) scale(0.00001);
-}
-
 #heart-check,
 #heart-check1 {
   display: none;
@@ -105,13 +94,13 @@ h1, h2, h3 {
     transform: rotate(-45deg) scale(0.4);
   }
   70% {
-    transform: rotate(-45deg) scale(0.9);
-  }
-  85% {
     transform: rotate(-45deg) scale(0.7);
   }
+  85% {
+    transform: rotate(-45deg) scale(1.2);
+  }
   100% {
-    transform: rotate(-45deg) scale(1);
+    transform: rotate(-45deg) scale(1.05);
   }
 }
 @keyframes pulseDown {
@@ -205,6 +194,7 @@ h1, h2, h3 {
 }
 .restaurant-title__heart {
   font-size: 30px;
+  cursor: pointer;
 }
 .restaurant-title__heart__filled {
   display: block;
@@ -215,6 +205,7 @@ h1, h2, h3 {
   height: 18px;
   width: 18px;
   transform: rotate(-45deg) scale(0.00001);
+  cursor: pointer;
 }
 .restaurant-title__heart__filled::after {
   background: inherit;
@@ -378,20 +369,22 @@ h1, h2, h3 {
 }
 .order__button {
   font-weight: bold;
+  font-size: 17px;
   color: white;
   height: 60px;
-  width: 60%;
-  margin: 15px 20% 15px 20%;
+  width: auto;
+  margin: 15px auto;
   border: none;
   box-shadow: 0px 5px 5px lightgrey;
   background: linear-gradient(170deg, #fd78da 20%, #9356dc 100%);
   border-radius: 30px;
   cursor: pointer;
+  padding: 0 20px;
   width: 50%;
-  font-size: 17px;
 }
 .order__button:hover {
   opacity: 0.8;
+  transition-duration: 0.5s;
   box-shadow: 2px 2px 10px grey;
 }
 
@@ -717,23 +710,21 @@ h1, h2, h3 {
 }
 .about__button {
   font-weight: bold;
+  font-size: 17px;
   color: white;
   height: 60px;
-  width: 60%;
-  margin: 15px 20% 15px 20%;
+  width: auto;
+  margin: 15px auto;
   border: none;
   box-shadow: 0px 5px 5px lightgrey;
   background: linear-gradient(170deg, #fd78da 20%, #9356dc 100%);
   border-radius: 30px;
   cursor: pointer;
-  width: auto;
-  margin: 15px auto;
   padding: 0 20px;
-  font-size: 17px;
-  transition-duration: 0.5s;
 }
 .about__button:hover {
   opacity: 0.8;
+  transition-duration: 0.5s;
   box-shadow: 2px 2px 10px grey;
 }
 

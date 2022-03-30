@@ -37,10 +37,12 @@
     }
     &__heartcontainer{
         height: 30px;
+        
     }
 
     &__heart {
         font-size: 30px;
+        cursor: pointer;
 
 
 
@@ -50,11 +52,10 @@
             position: relative;
             bottom: 25px;
             left: 6px;
-            // bottom: 0px;
-            // left: -30px;
             height: 18px;
             width: 18px;
             transform: rotate(-45deg) scale(0.00001);
+            cursor: pointer;
 
             &::after {
                 background: inherit;
@@ -248,6 +249,6 @@
     &__button {
         @include pinkButton;
         width: 50%;
-        font-size: 17px;
+       
     }
 }
