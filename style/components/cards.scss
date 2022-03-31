@@ -17,6 +17,7 @@
     }
 
     &__card {
+        position: relative;
         height: 260px;
 
         margin-bottom: 20px;
@@ -50,21 +51,18 @@
                 width: 80px;
                 display: block;
                 text-align: center;
-
-
                 height: 25px;
                 width: 100px;
                 padding-top: 5px;
-
-
-                position: relative;
+                position: absolute;
                 white-space: nowrap;
-                bottom: 170px;
-                left: 65%;
+                top: 10%;
+                right: 10%;
             }
         }
 
         &__card-info {
+            
             width: auto;
             display: flex;
             align-items: center;
@@ -95,12 +93,12 @@
             }
 
             &__like {
-                position: relative;
-                margin-right: 40px;
+                position: absolute;
+                margin-right: 20px;
                 font-size: 24px;
                 color: black;
-                bottom: 50px;
-                left: 85%;
+                bottom: 0;
+                right: 0;
                 
 
                 @for $i from 1 through 4 {

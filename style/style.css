@@ -103,14 +103,6 @@ h1, h2, h3 {
     transform: rotate(-45deg) scale(1.05);
   }
 }
-@keyframes pulseDown {
-  0% {
-    transform: rotate(-45deg) scale(1);
-  }
-  100% {
-    transform: rotate(-45deg) scale(0.00001);
-  }
-}
 .logo {
   display: flex;
   align-items: center;
@@ -423,6 +415,7 @@ h1, h2, h3 {
   padding: 0;
 }
 .restaurant-list__card {
+  position: relative;
   height: 260px;
   margin-bottom: 20px;
   box-shadow: 2px 2px 10px grey;
@@ -451,10 +444,10 @@ h1, h2, h3 {
   height: 25px;
   width: 100px;
   padding-top: 5px;
-  position: relative;
+  position: absolute;
   white-space: nowrap;
-  bottom: 170px;
-  left: 65%;
+  top: 10%;
+  right: 10%;
 }
 .restaurant-list__card__card-info {
   width: auto;
@@ -479,12 +472,12 @@ h1, h2, h3 {
   font-weight: 400;
 }
 .restaurant-list__card__card-info__like {
-  position: relative;
-  margin-right: 40px;
+  position: absolute;
+  margin-right: 20px;
   font-size: 24px;
   color: black;
-  bottom: 50px;
-  left: 85%;
+  bottom: 0;
+  right: 0;
 }
 .restaurant-list__card__card-info__like__heart1 {
   font-size: 30px;
