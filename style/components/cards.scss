@@ -62,7 +62,7 @@
         }
 
         &__card-info {
-            
+
             width: auto;
             display: flex;
             align-items: center;
@@ -99,7 +99,7 @@
                 color: black;
                 bottom: 0;
                 right: 0;
-                
+
 
                 @for $i from 1 through 4 {
 
@@ -143,10 +143,11 @@
                             }
                         }
                     }
-                    #heart-check#{$i}:checked~ .restaurant-list__card__card-info__like__heart#{$i}__filled#{$i} {
+
+                    #heart-check#{$i}:checked~.restaurant-list__card__card-info__like__heart#{$i}__filled#{$i} {
                         animation: pulseUp 2s;
                         animation-fill-mode: both;
-                    
+
                     }
                 }
             }

@@ -4,43 +4,31 @@
     z-index: -10;
   }
 }
-
 @keyframes cube {
   0% {
     transform: rotate3d(0, 0, 1, 0deg);
-
   }
-
   100% {
     transform: rotate3d(0, 0, 1, 360deg);
   }
-
 }
-
-//   @keyframes MenuDishes {
-//     0% {
-//       transform: scale(0)
-//     }
-//     100% {
-//       transform: scale(1);
-//     }
-
-
-// }
+// @keyframes MenuDishes {
+//   0% {
+//     transform: scale(0)
+//   }
+//   100% {
+//     transform: scale(1);
+//   }
 @keyframes MenuDishes {
   0% {
     transform: translateY(20px);
     opacity: 0;
   }
-
   100% {
     transform: translateY(0px);
     opacity: 1;
   }
-
-
 }
-
 .loader {
   position: fixed;
   height: 100%;
@@ -53,22 +41,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-
   &__cube {
     background-color: $color-primary;
     height: 30px;
     width: 30px;
-
     animation: cube 0.7s;
     animation-iteration-count: 3;
-
-
-
   }
-
 }
-
 // .heart {
 //   display: block;
 //   background: $color-primary;
@@ -78,69 +58,47 @@
 //   height: 15px;
 //   width: 15px;
 //   transform: rotate(-45deg) scale(0.00001);
-
 // }
-
 @for $i from 1 through 4 {
-
   #heart-check,
   #heart-check#{$i} {
     display: none;
   }
 }
-
-
-
-
-
 @keyframes pulseUp {
   0% {
     transform: rotate(-45deg) scale(0.5);
   }
-
   10% {
     transform: rotate(-45deg) scale(0.7);
   }
-
   20% {
     transform: rotate(-45deg) scale(0.4);
   }
-
   30% {
     transform: rotate(-45deg) scale(0.8);
   }
-
   40% {
     transform: rotate(-45deg) scale(0.4);
   }
-
   70% {
     transform: rotate(-45deg) scale(0.7);
   }
-
   85% {
     transform: rotate(-45deg) scale(1.2);
   }
-
   100% {
     transform: rotate(-45deg) scale(1.05);
   }
 }
-
-
-
 // @keyframes pulseDown {
-
-
 //   0% {
 //     transform: rotate(-45deg) scale(1);
 //   }
-
 //   100% {
 //     transform: rotate(-45deg) scale(0.00001);
 //   }
 // }
-
 // .heart::after {
 //   background: inherit;
 //   border-radius: 50%;
@@ -151,7 +109,6 @@
 //   height: 15px;
 //   width: 15px;
 // }
-
 // .heart::before {
 //   background: inherit;
 //   border-radius: 50%;
